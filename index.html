@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Blockivo</title>
+  <style>
+    :root {
+      --bg: #0f1220;
+      --card: #171a2b;
+      --text: #e7e9f3;
+      --muted: #a2a7bd;
+      --accent: #6c8cff;
+      --border: #262a40;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f5f6fb;
+        --card: #ffffff;
+        --text: #1c2033;
+        --muted: #5a5f78;
+        --accent: #3a5bff;
+        --border: #e2e5f0;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+    header {
+      padding: 28px 0 20px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    h1 { font-size: 1.9rem; margin: 0 0 6px; }
+    h2 {
+      font-size: 1.25rem;
+      margin: 36px 0 12px;
+      color: var(--text);
+    }
+    h3 { font-size: 1.05rem; margin: 22px 0 8px; }
+    p, li { color: var(--text); }
+    .muted { color: var(--muted); font-size: 0.92rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin: 18px 0;
+    }
+    ul { padding-left: 20px; }
+    li { margin: 6px 0; }
+    code {
+      background: rgba(128,128,128,0.15);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.88em;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .lang-toggle {
+      display: inline-flex;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      overflow: hidden;
+      background: var(--card);
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+    .lang-toggle button {
+      appearance: none;
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 7px 16px;
+      cursor: pointer;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .lang-toggle button:hover { color: var(--text); }
+    .lang-toggle button.active {
+      background: var(--accent);
+      color: #ffffff;
+    }
+    .lang-toggle button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: -2px;
+    }
+    /* Language visibility */
+    [data-lang] { display: none; }
+    html.lang-en [data-lang="en"] { display: revert; }
+    html.lang-tr [data-lang="tr"] { display: revert; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1 data-lang="en">Privacy Policy</h1>
+        <h1 data-lang="tr">Gizlilik Politikası</h1>
+        <p class="muted" data-lang="en">Blockivo — Block Puzzle Game</p>
+        <p class="muted" data-lang="tr">Blockivo — Blok Bulmaca Oyunu</p>
+        <p class="muted" data-lang="en">Last updated: July 6, 2026</p>
+        <p class="muted" data-lang="tr">Son güncelleme: 6 Temmuz 2026</p>
+      </div>
+      <div class="lang-toggle" role="group" aria-label="Language / Dil">
+        <button type="button" id="btn-en" onclick="setLang('en')">English</button>
+        <button type="button" id="btn-tr" onclick="setLang('tr')">Türkçe</button>
+      </div>
+    </header>
+
+    <!-- ======================= ENGLISH ======================= -->
+    <div data-lang="en">
+      <p>
+        This Privacy Policy explains how we, the developer of the mobile application
+        <strong>Blockivo</strong> (the "App"), handle information in connection with the App.
+        We respect your privacy and are committed to protecting it. Blockivo is an
+        <strong>offline-first</strong> game: the core gameplay works entirely on your device
+        and does not require an account, sign-in, or an internet connection.
+      </p>
+
+      <div class="card">
+        <strong>In short:</strong> We do not ask you to create an account and we do not collect
+        personal information that identifies you. Your game data (scores, settings, progress)
+        is stored locally on your device. The only data leaving your device is what is needed to
+        show ads through Google AdMob when you are online — and where required by law, ads are
+        shown only in line with the choices you make in our consent form.
+      </div>
+
+      <h2>1. Information We Do Not Collect</h2>
+      <p>
+        Blockivo does not require you to register, log in, or provide any personal details such as
+        your name, email address, phone number, or precise location. We do not maintain user
+        accounts and we do not operate our own servers that store your personal data.
+      </p>
+
+      <h2>2. Data Stored on Your Device</h2>
+      <p>
+        The App stores the following information <strong>locally on your device only</strong>
+        (using on-device storage). This data is not transmitted to us:
+      </p>
+      <ul>
+        <li>Game progress, high scores, best combos, and statistics.</li>
+        <li>App preferences and settings (for example, sound, vibration, and theme options).</li>
+        <li>Whether you have completed the first-run tutorial.</li>
+        <li>Your advertising consent choices (see Section 4).</li>
+      </ul>
+      <p class="muted">
+        This data remains on your device and is removed when you uninstall the App or clear its
+        data from your device settings.
+      </p>
+
+      <h2>3. Advertising (Google AdMob)</h2>
+      <p>
+        Blockivo displays advertisements through <strong>Google AdMob</strong>, a service provided
+        by Google. Ads are shown only when your device is online. To provide and measure ads,
+        Google and its partners may collect and process certain information, which may include:
+      </p>
+      <ul>
+        <li>Advertising identifiers (such as the Android Advertising ID / <code>AD_ID</code>).</li>
+        <li>Device information (device model, operating system, and similar technical data).</li>
+        <li>General, non-precise location inferred from your IP address.</li>
+        <li>Data about your interaction with ads.</li>
+      </ul>
+      <p>
+        This information is used by Google to deliver and personalize ads, limit the number of times
+        you see a particular ad, measure ad performance, and detect and prevent fraud and abuse.
+        Where you have not consented to personalized advertising (see Section 4), or where you have
+        opted out in your device settings, ads may still be shown but will be non-personalized.
+        We do not control the data collected by Google. For details on how Google uses this data,
+        please review:
+      </p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob and data protection</a></li>
+      </ul>
+      <p>
+        You can manage or reset your Advertising ID, or opt out of personalized advertising, in your
+        device settings under <em>Settings &rarr; Google &rarr; Ads</em> (on Android).
+      </p>
+
+      <h2>4. Your Advertising Consent Choices (EEA, UK, and Switzerland)</h2>
+      <p>
+        If you are located in the European Economic Area (EEA), the United Kingdom, or Switzerland,
+        the App will show you a <strong>consent form</strong> before displaying ads. This form is
+        provided through Google's User Messaging Platform (UMP), a Google-certified consent
+        management platform that operates under the IAB Transparency &amp; Consent Framework (TCF).
+      </p>
+      <p>Through this form you can:</p>
+      <ul>
+        <li>Consent to, or decline, the use of your data for <strong>personalized advertising</strong>.</li>
+        <li>Review the list of advertising partners (vendors) and the purposes for which data may be processed.</li>
+        <li>Make granular choices per purpose and per partner.</li>
+      </ul>
+      <p>
+        Your choices are stored on your device and shared with Google and its advertising partners
+        as a consent signal. If you decline personalized advertising, the App may still show
+        <strong>non-personalized (limited) ads</strong>, which rely on contextual information rather
+        than your ad profile.
+      </p>
+      <div class="card">
+        <strong>Changing your mind:</strong> You can review or change your consent choices at any
+        time from within the App via <em>Settings &rarr; Privacy &amp; ad preferences</em>. Withdrawing
+        consent is as easy as giving it and does not affect core gameplay in any way.
+      </div>
+
+      <h2>5. Internet and Network Access</h2>
+      <p>
+        The App requests internet and network-state permissions solely to load advertisements when
+        you are online and to detect connectivity. Core gameplay does not depend on the network and
+        continues to work fully offline.
+      </p>
+
+      <h2>6. Third-Party Services</h2>
+      <p>
+        In addition to Google AdMob, the App uses standard device features that may open other apps
+        at your request — for example, opening your browser to view this policy, opening the Google
+        Play Store to rate the App, or using your device's share sheet to share your score. These
+        actions are initiated by you and are handled by your device and the respective apps, not by us.
+      </p>
+
+      <h2>7. Children's Privacy</h2>
+      <p>
+        Blockivo is a general-audience game and is not directed to children under the age of 13
+        (or the equivalent minimum age in your jurisdiction). We do not knowingly collect personal
+        information from children. If you believe a child has provided us with personal information,
+        please contact us and we will take appropriate steps.
+      </p>
+
+      <h2>8. Your Rights and Choices</h2>
+      <ul>
+        <li>You can reset or delete your locally stored game data by clearing the App's data or uninstalling it.</li>
+        <li>You can reset your Advertising ID or opt out of ad personalization in your device settings.</li>
+        <li>If you are in the EEA, the UK, or Switzerland, you can review and change your advertising
+            consent choices at any time via <em>Settings &rarr; Privacy &amp; ad preferences</em> in the App
+            (see Section 4).</li>
+        <li>Depending on your region (for example, the EEA, UK, or California), you may have additional
+            rights regarding data processed by Google for advertising — such as the rights of access,
+            rectification, erasure, and objection under the GDPR. Because this data is collected and
+            processed by Google, please refer to Google's policies linked above to exercise these
+            rights, or contact us and we will do our best to point you in the right direction.</li>
+      </ul>
+
+      <h2>9. Data Security</h2>
+      <p>
+        Because gameplay data is stored locally on your device, its security depends on the security
+        of your device. We recommend keeping your device's operating system and security features
+        up to date.
+      </p>
+
+      <h2>10. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. When we do, we will revise the
+        "Last updated" date above. Continued use of the App after changes take effect constitutes
+        your acceptance of the revised policy.
+      </p>
+
+      <h2>11. Contact Us</h2>
+      <p>
+        If you have any questions or concerns about this Privacy Policy, you can contact us at:
+      </p>
+      <div class="card">
+        <p style="margin:0;"><strong>Blockivo Support</strong><br />
+        Email: <a href="mailto:said.atmaca.dev@gmail.com">said.atmaca.dev@gmail.com</a></p>
+      </div>
+    </div>
+
+    <!-- ======================= TÜRKÇE ======================= -->
+    <div data-lang="tr">
+      <p>
+        Bu Gizlilik Politikası, <strong>Blockivo</strong> mobil uygulamasının ("Uygulama")
+        geliştiricisi olarak bizim, Uygulama ile bağlantılı bilgileri nasıl ele aldığımızı
+        açıklar. Gizliliğinize saygı duyuyor ve onu korumayı taahhüt ediyoruz. Blockivo,
+        <strong>öncelikle çevrimdışı (offline-first)</strong> bir oyundur: temel oynanış
+        tamamen cihazınızda çalışır; hesap, giriş veya internet bağlantısı gerektirmez.
+      </p>
+
+      <div class="card">
+        <strong>Kısaca:</strong> Sizden hesap oluşturmanızı istemiyoruz ve sizi tanımlayan
+        kişisel bilgiler toplamıyoruz. Oyun verileriniz (skorlar, ayarlar, ilerleme) cihazınızda
+        yerel olarak saklanır. Cihazınızdan çıkan tek veri, çevrimiçi olduğunuzda Google AdMob
+        aracılığıyla reklam göstermek için gereken veridir — ve yasaların gerektirdiği yerlerde
+        reklamlar yalnızca rıza formunda yaptığınız seçimlere uygun olarak gösterilir.
+      </div>
+
+      <h2>1. Toplamadığımız Bilgiler</h2>
+      <p>
+        Blockivo; kayıt olmanızı, giriş yapmanızı veya adınız, e-posta adresiniz, telefon
+        numaranız ya da hassas konumunuz gibi herhangi bir kişisel bilgi vermenizi gerektirmez.
+        Kullanıcı hesabı tutmuyoruz ve kişisel verilerinizi saklayan kendi sunucularımızı
+        işletmiyoruz.
+      </p>
+
+      <h2>2. Cihazınızda Saklanan Veriler</h2>
+      <p>
+        Uygulama, aşağıdaki bilgileri <strong>yalnızca cihazınızda yerel olarak</strong>
+        (cihaz üzeri depolama kullanarak) saklar. Bu veriler bize iletilmez:
+      </p>
+      <ul>
+        <li>Oyun ilerlemesi, en yüksek skorlar, en iyi kombolar ve istatistikler.</li>
+        <li>Uygulama tercihleri ve ayarları (örneğin ses, titreşim ve tema seçenekleri).</li>
+        <li>İlk açılış eğitimini (tutorial) tamamlayıp tamamlamadığınız.</li>
+        <li>Reklam rızası tercihleriniz (bkz. Bölüm 4).</li>
+      </ul>
+      <p class="muted">
+        Bu veriler cihazınızda kalır; Uygulamayı kaldırdığınızda veya cihaz ayarlarından
+        Uygulamanın verilerini temizlediğinizde silinir.
+      </p>
+
+      <h2>3. Reklamlar (Google AdMob)</h2>
+      <p>
+        Blockivo, Google tarafından sağlanan bir hizmet olan <strong>Google AdMob</strong>
+        aracılığıyla reklam gösterir. Reklamlar yalnızca cihazınız çevrimiçiyken gösterilir.
+        Reklamları sunmak ve ölçmek için Google ve iş ortakları, aşağıdakileri içerebilecek
+        belirli bilgileri toplayabilir ve işleyebilir:
+      </p>
+      <ul>
+        <li>Reklam tanımlayıcıları (Android Reklam Kimliği / <code>AD_ID</code> gibi).</li>
+        <li>Cihaz bilgileri (cihaz modeli, işletim sistemi ve benzeri teknik veriler).</li>
+        <li>IP adresinizden çıkarılan genel, hassas olmayan konum.</li>
+        <li>Reklamlarla etkileşiminize ilişkin veriler.</li>
+      </ul>
+      <p>
+        Bu bilgiler Google tarafından reklamları sunmak ve kişiselleştirmek, aynı reklamı görme
+        sayınızı sınırlamak, reklam performansını ölçmek ve dolandırıcılık ile kötüye kullanımı
+        tespit edip önlemek için kullanılır. Kişiselleştirilmiş reklamlara rıza vermediyseniz
+        (bkz. Bölüm 4) veya cihaz ayarlarınızdan devre dışı bıraktıysanız, reklamlar yine
+        gösterilebilir ancak kişiselleştirilmemiş olur. Google'ın topladığı verileri biz kontrol
+        etmiyoruz. Google'ın bu verileri nasıl kullandığına ilişkin ayrıntılar için lütfen
+        şunları inceleyin:
+      </p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google, hizmetlerini kullanan site ve uygulamalardan gelen bilgileri nasıl kullanır?</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob ve veri koruması</a></li>
+      </ul>
+      <p>
+        Reklam Kimliğinizi yönetebilir veya sıfırlayabilir ya da kişiselleştirilmiş reklamcılığı
+        cihaz ayarlarınızdan (Android'de <em>Ayarlar &rarr; Google &rarr; Reklamlar</em>) devre dışı
+        bırakabilirsiniz.
+      </p>
+
+      <h2>4. Reklam Rızası Tercihleriniz (AEA, Birleşik Krallık ve İsviçre)</h2>
+      <p>
+        Avrupa Ekonomik Alanı (AEA), Birleşik Krallık veya İsviçre'de bulunuyorsanız, Uygulama
+        reklamları göstermeden önce size bir <strong>rıza formu</strong> gösterir. Bu form,
+        IAB Şeffaflık ve Rıza Çerçevesi (TCF) kapsamında çalışan, Google onaylı bir rıza yönetim
+        platformu olan Google'ın User Messaging Platform (UMP) hizmeti aracılığıyla sunulur.
+      </p>
+      <p>Bu form aracılığıyla şunları yapabilirsiniz:</p>
+      <ul>
+        <li>Verilerinizin <strong>kişiselleştirilmiş reklamcılık</strong> için kullanılmasına rıza verebilir veya bunu reddedebilirsiniz.</li>
+        <li>Reklam iş ortaklarının (tedarikçilerin) listesini ve verilerin hangi amaçlarla işlenebileceğini inceleyebilirsiniz.</li>
+        <li>Amaç ve iş ortağı bazında ayrıntılı seçimler yapabilirsiniz.</li>
+      </ul>
+      <p>
+        Tercihleriniz cihazınızda saklanır ve bir rıza sinyali olarak Google ve reklam iş
+        ortaklarıyla paylaşılır. Kişiselleştirilmiş reklamları reddederseniz, Uygulama yine de
+        reklam profiliniz yerine bağlamsal bilgilere dayanan <strong>kişiselleştirilmemiş
+        (sınırlı) reklamlar</strong> gösterebilir.
+      </p>
+      <div class="card">
+        <strong>Fikriniz değişirse:</strong> Rıza tercihlerinizi dilediğiniz zaman Uygulama
+        içinden <em>Ayarlar &rarr; Gizlilik ve reklam tercihleri</em> yolunu izleyerek inceleyebilir
+        veya değiştirebilirsiniz. Rızayı geri çekmek, vermek kadar kolaydır ve temel oynanışı
+        hiçbir şekilde etkilemez.
+      </div>
+
+      <h2>5. İnternet ve Ağ Erişimi</h2>
+      <p>
+        Uygulama; internet ve ağ durumu izinlerini yalnızca çevrimiçi olduğunuzda reklamları
+        yüklemek ve bağlantı durumunu algılamak için ister. Temel oynanış ağa bağlı değildir ve
+        tamamen çevrimdışı çalışmaya devam eder.
+      </p>
+
+      <h2>6. Üçüncü Taraf Hizmetler</h2>
+      <p>
+        Google AdMob'a ek olarak Uygulama, sizin isteğinizle başka uygulamaları açabilen standart
+        cihaz özelliklerini kullanır — örneğin bu politikayı görüntülemek için tarayıcınızı açmak,
+        Uygulamayı puanlamak için Google Play Store'u açmak veya skorunuzu paylaşmak için cihazınızın
+        paylaşım menüsünü kullanmak. Bu işlemler sizin tarafınızdan başlatılır ve bizim tarafımızdan
+        değil, cihazınız ve ilgili uygulamalar tarafından gerçekleştirilir.
+      </p>
+
+      <h2>7. Çocukların Gizliliği</h2>
+      <p>
+        Blockivo genel kitleye yönelik bir oyundur ve 13 yaşın (veya bulunduğunuz bölgedeki eşdeğer
+        asgari yaşın) altındaki çocuklara yönelik değildir. Çocuklardan bilerek kişisel bilgi
+        toplamıyoruz. Bir çocuğun bize kişisel bilgi verdiğini düşünüyorsanız, lütfen bizimle
+        iletişime geçin; gerekli adımları atacağız.
+      </p>
+
+      <h2>8. Haklarınız ve Seçenekleriniz</h2>
+      <ul>
+        <li>Uygulamanın verilerini temizleyerek veya Uygulamayı kaldırarak yerel olarak saklanan oyun verilerinizi sıfırlayabilir ya da silebilirsiniz.</li>
+        <li>Reklam Kimliğinizi sıfırlayabilir veya cihaz ayarlarınızdan reklam kişiselleştirmesini devre dışı bırakabilirsiniz.</li>
+        <li>AEA, Birleşik Krallık veya İsviçre'de bulunuyorsanız, reklam rızası tercihlerinizi
+            dilediğiniz zaman Uygulama içindeki <em>Ayarlar &rarr; Gizlilik ve reklam tercihleri</em>
+            bölümünden inceleyebilir ve değiştirebilirsiniz (bkz. Bölüm 4).</li>
+        <li>Bulunduğunuz bölgeye bağlı olarak (örneğin AEA, Birleşik Krallık veya Kaliforniya),
+            Google tarafından reklamcılık için işlenen verilerle ilgili ek haklara sahip
+            olabilirsiniz — örneğin GDPR kapsamındaki erişim, düzeltme, silme ve itiraz hakları.
+            Bu veriler Google tarafından toplanıp işlendiğinden, bu hakları kullanmak için lütfen
+            yukarıda bağlantısı verilen Google politikalarına başvurun veya bizimle iletişime
+            geçin; sizi doğru yöne yönlendirmek için elimizden geleni yaparız.</li>
+      </ul>
+
+      <h2>9. Veri Güvenliği</h2>
+      <p>
+        Oyun verileri cihazınızda yerel olarak saklandığından, bu verilerin güvenliği cihazınızın
+        güvenliğine bağlıdır. Cihazınızın işletim sistemini ve güvenlik özelliklerini güncel
+        tutmanızı öneririz.
+      </p>
+
+      <h2>10. Bu Politikadaki Değişiklikler</h2>
+      <p>
+        Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Güncelleme yaptığımızda yukarıdaki
+        "Son güncelleme" tarihini değiştiririz. Değişiklikler yürürlüğe girdikten sonra Uygulamayı
+        kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.
+      </p>
+
+      <h2>11. Bize Ulaşın</h2>
+      <p>
+        Bu Gizlilik Politikası hakkında herhangi bir sorunuz veya endişeniz varsa bize şu adresten
+        ulaşabilirsiniz:
+      </p>
+      <div class="card">
+        <p style="margin:0;"><strong>Blockivo Destek</strong><br />
+        E-posta: <a href="mailto:said.atmaca.dev@gmail.com">said.atmaca.dev@gmail.com</a></p>
+      </div>
+    </div>
+
+    <footer>
+      <span data-lang="en">&copy; 2026 Blockivo. All rights reserved. — Blockivo Privacy Policy</span>
+      <span data-lang="tr">&copy; 2026 Blockivo. Tüm hakları saklıdır. — Blockivo Gizlilik Politikası</span>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      var root = document.documentElement;
+      root.classList.remove('lang-en', 'lang-tr');
+      root.classList.add('lang-' + lang);
+      root.setAttribute('lang', lang);
+      document.title = lang === 'tr'
+        ? 'Gizlilik Politikası — Blockivo'
+        : 'Privacy Policy — Blockivo';
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+    }
+
+    // Default: follow the visitor's browser language (Turkish → TR, otherwise EN)
+    (function () {
+      var prefersTr = (navigator.language || '').toLowerCase().indexOf('tr') === 0;
+      setLang(prefersTr ? 'tr' : 'en');
+    })();
+  </script>
+</body>
+</html>
